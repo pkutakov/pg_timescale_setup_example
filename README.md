@@ -3,7 +3,7 @@
 ## Установка
 Для установки собственно PostgreSQL и расширения TimescaleDB в Ubuntu 22 выполните следующие команды (инструкция взята отсюда: https://docs.timescale.com/self-hosted/latest/install/installation-linux/) :
 ```
-sudo apt install gnupg postgresql-common apt-transport-https lsb-release wget
+sudo apt install gnupg postgresql-common apt-transport-https lsb-release wget -y
 
 sudo /usr/share/postgresql-common/pgdg/apt.postgresql.org.sh
 
@@ -11,9 +11,9 @@ echo "deb https://packagecloud.io/timescale/timescaledb/ubuntu/ $(lsb_release -c
 
 wget --quiet -O - https://packagecloud.io/timescale/timescaledb/gpgkey | sudo gpg --dearmor -o /etc/apt/trusted.gpg.d/timescaledb.gpg
 
-sudo apt update
+sudo apt update -y
 
-sudo apt install timescaledb-2-postgresql-16 postgresql-client
+sudo apt install timescaledb-2-postgresql-16 postgresql-client -y
 ```
 После этого запустите скрипт "тюнинга" параметров, в котором отвечайде yes на все вопросы:
 ```
