@@ -1,7 +1,7 @@
 # Эксперимент с колоночным хранением в PostgreSQL
 
 ## Установка
-Для установки собственно PostgreSQL и расширения TimescaleDB в Ubuntu 22 выполните следующие команды:
+Для установки собственно PostgreSQL и расширения TimescaleDB в Ubuntu 22 выполните следующие команды (инструкция взята отсюда: https://docs.timescale.com/self-hosted/latest/install/installation-linux/) :
 ```
 sudo apt install gnupg postgresql-common apt-transport-https lsb-release wget
 
